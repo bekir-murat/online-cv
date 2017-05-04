@@ -2,7 +2,9 @@
 title: Bekir Murat
 url: 'http://bekir-murat.github.io'
 baseurl: '/online-cv' #change it according to your repository name
-
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
 #style: styles-2
