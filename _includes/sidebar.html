@@ -35,14 +35,20 @@
                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
                     {% endif %}
 
-                    <li class="email"><h4 class="degree">French citizen | NZ resident</h4></li>
+                    {% if site.citizenship1 %}
+                    <li class="github"><i class="fa fa-book"></i><a target="_blank">{{site.citizenship1}}</a></li>
+                    {% endif %}
+
+                    {% if site.citizenship2 %}
+                    <li class="github"><i class="fa fa-book"></i><a target="_blank">{{site.citizenship2}}</a></li>
+                    {% endif %}
                     
                 </ul>
             </div><!--//contact-container-->
-           {% include education.html %}
            {% include certificates.html %}
+           {% include education.html %}
+           {% include other_skills.html %}
            {% include language.html %}
            {% include interests.html %}
-           {% include other_skills.html %}
             
         </div><!--//sidebar-wrapper-->
