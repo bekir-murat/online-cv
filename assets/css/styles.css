@@ -205,8 +205,13 @@ p3 {
 .main-wrapper .section {
   margin-bottom: 60px;
 }
-.main-wrapper .experiences-section .experience .item {
+.main-wrapper .experiences-section .item {
   margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.main-wrapper .experiences-section {
+  margin-bottom: 45px;
 }
 
 .main-wrapper .work-history-section .item {
@@ -349,12 +354,15 @@ p3 {
   .experience {
     display: inline-block;
     width: 100%;
+    position: relative;
   }
   .experience .left_col {
     display: inline-block;
     float: left;
     width: 50%;
     padding-right: 25px;
+    position: relative;
+    overflow: hidden;
   }
   .experience .right_col {
     display: inline-block;
@@ -362,6 +370,7 @@ p3 {
     float: left;
     padding-left: 25px;
     position: relative;
+    overflow: hidden;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
